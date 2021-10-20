@@ -1,0 +1,28 @@
+body {
+    background-color: #6B5B95;
+}
+
+.class {
+    color: white;
+    padding: 0px;
+    width: 150%;
+    padding: 40px 100px;
+    border: 10px solid black;
+    border-radius: 20px;
+}
+
+.text {
+    color: white;
+    text-align: center;
+    text-decoration: unset;
+    word-spacing: 1px;
+    text-transform: none;
+    text-indent: 10px;
+    text-shadow: 10px 10px 10px black;
+    white-space: normal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    line-height: 1.4;
+    font-style: italic;
+    font-weight: normal;
+}
