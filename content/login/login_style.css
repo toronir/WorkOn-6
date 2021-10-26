@@ -1,0 +1,56 @@
+.main-block {
+    width: 400px;
+    height: 400px;
+    position: fixed;
+    top: calc(50% - 200px);
+    left: calc(50% - 200px);
+    background-color: royalblue;
+}
+
+.input {
+    width: 60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+h3 {
+    color: white;
+    text-align: center;
+}
+
+.login-text {
+    color: white;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.input-center2 {
+    margin-left: 28px;
+}
+
+.input-center1 {
+    margin-left: 20px;
+}
+
+.send {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    background-color: rgb(71, 168, 233);
+    border: 1px solid rgb(25, 109, 148);
+    box-sizing: border-box;
+    margin-left: 100px;
+    border-radius: 10px;
+}
+
+.send:active {
+    background-color: rgb(6, 56, 90);
+}
+
+.input:hover {
+    border: 1px solid rgb(7, 74, 151);
+}

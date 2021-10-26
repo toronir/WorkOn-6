@@ -53,6 +53,14 @@ header {
     position: absolute;
 }
 
+.transform-arrow {
+    transform: rotate(0);
+}
+
+.menu-collapse:hover .transform-arrow {
+    transform: rotate(180deg);
+}
+
 
 /* .div-leayer {
     position: relative;

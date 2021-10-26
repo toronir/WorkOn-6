@@ -23,59 +23,69 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="../../index.style.css">
+    <link rel="stylesheet" href="./login_style.css">
+    <link rel="stylesheet" href="../../css/all.min.css">
 </head>
 
 <body>
     <header>
 
-        <img src="../img/JS_logo.png" alt="JavaScript Logo" style="width: 3%">
-        <nav>
+
+        <nav class="div-leayer">
             <div>
-                <h4>Menu</h4>
+                <img src="../../content/img/JS_logo.png" alt="JavaScript Logo" style="width: 3%"> Menu
+                <a class="menu-button" href="./content/offer/offer.html">Offer</a>
+                <a class="menu-button" href="./content/login/login.htm">LogIn</a>
+                <a class="menu-button" href="./content/regist/regist.html">Registration</a>
+                <ul class="menu-collapse">About Us <i class="fas fa-arrow-down transform-arrow"></i>
+                    <ul class="ul">
+                        <li><a href="#">Dwa</a></li>
+                        <li><a href="#">Dwa</a></li>
+                        <li><a href="#">Dwa</a></li>
+                    </ul>
+                </ul>
+                <ul class="menu-collapse">
+                    Contact <i class="fas fa-arrow-down transform-arrow"></i>
+                    <ul class="ul">
+                        <li><a href="#">Raz</a></li>
+                        <li><a href="#">Raz</a></li>
+                        <li><a href="#">Raz</a></li>
+                    </ul>
+                </ul>
             </div>
-            <ul>
-                <li><a href="../offer/offer.html">Offer</a></li>
-                <li><a href="../../index.html">Main Page</a></li>
-                <li><a href="../regist/regist.html">Registration</a></li>
-                <li><a href="../aboutUs/aboutUs.html">About Us</a></li>
-                <li><a href="../contact/contact.html">Contact</a></li>
-            </ul>
-        </nav>
-
     </header>
+    <main>
+        <form action="" method="GET" class="main-block">
 
-    <form action="" method="GET">
-        <fieldset>
-            <legend>Authorization:</legend>
+
             <div>
+                <h3>
+                    Login
+                </h3>
+                <div>
+                    <label for="loginUsername"><span class="login-text"><i class="fas fa-user"></i >User Name</span></label>
+                    <input class="input-center1 input" type="text" title="username" name="username" id="loginUsername" value="" placeholder="username" required>
 
-                <div>
-                    <label for="loginUsername">User Name</label>
-                    <input type="text" title="username" name="username" id="loginUsername" value=""
-                        placeholder="username" required>
                 </div>
                 <div>
-                    <label for="loginPassword">Password </label>
-                    <input type="password" title="password" name="password" id="loginPassword" value=""
-                        placeholder="password" required>
+                    <label for="loginPassword"><span class="login-text"><i class="fas fa-unlock-alt"></i> Password</span> </label>
+                    <input class="input-center2 input" type="password" title="password" name="password" id="loginPassword" value="" placeholder="password" required>
                 </div>
                 <div>
-                    <input type="checkbox" title="checkbox" name="checkbox" id="loginCheckbox">
-                    <label for="loginCheckbox">Remember Me </label>
+                    <input style="margin-left: 150px;" type="checkbox" title="checkbox" name="checkbox" id="loginCheckbox">
+                    <label for="loginCheckbox"><span class="login-text">Remeber Me</span></label>
                 </div>
                 <div>
-                    <input type="submit" value="Send">
-                </div>
-                <button type="reset">
-                    reset
-                </button>
-        </fieldset>
+                    <input class="send" type="submit" value="Send">
 
-    </form>
+                </div>
 
-    <footer>
-        WeMakeYouWebsite &copy; telephone +8800553535 email: wemakeyouwebsite@gamil.com
-    </footer>
+
+
+        </form>
+    </main>
+
 </body>
 
 </html>
