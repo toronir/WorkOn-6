@@ -23,3 +23,42 @@ nav ul li {
 header img {
     max-width: 100px;
 }
+
+@media (min-width: 500px) {
+    header {
+        flex-direction: row;
+    }
+}
+
+.first-block {
+    display: flex;
+    padding: 20px 40px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+div img {
+    max-width: 600px;
+    flex-grow: 4;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.login-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 400px;
+    background-color: royalblue;
+    flex-grow: 1;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.login-box div input {
+    padding: 5px;
+    margin: 10px;
+}
+
+.login-box div button {
+    padding: 5px;
+    margin: 10px;
+}
