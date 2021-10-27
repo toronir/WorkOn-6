@@ -1,37 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .box {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 200px;
     height: 200px;
     animation-name: my_animation;
     background-color: red;
-    animation-duration: 10s;
+    animation-duration: 4s;
     position: relative;
     animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 @keyframes my_animation {
     0% {
-        left: 0px;
-        top: 0px;
-        transform: rotate(90deg);
+        left: 0;
+        top: 0;
+        transform: rotate(0deg);
     }
     25% {
-        left: 106rem;
+        left: calc(100% - 200px);
         top: 0rem;
         transform: rotate(-90deg);
     }
     50% {
-        left: 106rem;
+        left: calc(100% - 200px);
         top: 47rem;
-        transform: rotate(90deg);
+        transform: rotate(-180deg);
     }
     75% {
         left: 0;
         top: 47rem;
-        transform: rotate(-90deg)
+        transform: rotate(-270deg)
     }
     100% {
         left: 0;
         top: 0;
-        transform: rotate(90deg);
+        transform: rotate(-360deg);
     }
 }
