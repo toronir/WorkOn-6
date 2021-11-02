@@ -123,7 +123,7 @@ button.ghost {
     justify-content: space-evenly;
     display: flex;
     flex-wrap: wrap;
-    align-items: stretch;
+    align-items;
 }
 
 .card {
