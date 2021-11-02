@@ -29,62 +29,55 @@
 </head>
 
 <body>
-    <header>
+    <div class="grid-wrapper">
+        <header>
+            <img src="../img/Lo_Go.png" alt="JavaScript Logo">
+            <nav class="div-leayer">
+                <div>
 
-
-        <nav class="div-leayer">
-            <div>
-                <img src="../../content/img/JS_logo.png" alt="JavaScript Logo" style="width: 3%"> Menu
-                <a class="menu-button" href="./content/offer/offer.html">Offer</a>
-                <a class="menu-button" href="./content/login/login.htm">LogIn</a>
-                <a class="menu-button" href="./content/regist/regist.html">Registration</a>
-                <ul class="menu-collapse">About Us <i class="fas fa-arrow-down transform-arrow"></i>
-                    <ul class="ul">
-                        <li><a href="#">Dwa</a></li>
-                        <li><a href="#">Dwa</a></li>
-                        <li><a href="#">Dwa</a></li>
+                    <a class="menu-button" href="./content/offer/offer.html">About Us</a>
+                    <a class="menu-button" href="./content/login/login.htm">LogIn</a>
+                    <a class="menu-button" href="./content/regist/regist.html">Registration</a>
+                    <ul class="menu-collapse">Offers <i class="fas fa-chevron-down transform-arrow"></i>
+                        <ul class="ul">
+                            <li><a href="#">Website</a></li>
+                            <li><a href="#">Aplication</a></li>
+                        </ul>
                     </ul>
-                </ul>
-                <ul class="menu-collapse">
-                    Contact <i class="fas fa-arrow-down transform-arrow"></i>
-                    <ul class="ul">
-                        <li><a href="#">Raz</a></li>
-                        <li><a href="#">Raz</a></li>
-                        <li><a href="#">Raz</a></li>
+                    <ul class="menu-collapse">
+                        Login <i class="fas fa-chevron-down transform-arrow"></i>
+                        <ul class="ul">
+                            <li><a href="#">Create Account</a></li>
+                            <li><a href="./content/login/login.htm">I have one!</a></li>
+                        </ul>
                     </ul>
-                </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="first-block">
+                <div class="login-box">
+                    <form>
+                        <h2>Sign in</h1>
+                            <div>
+                                <input type="text" placeholder="Login">
+                            </div>
+                            <div>
+                                <input type="password" placeholder="Password">
+                            </div>
+                            <a href="#">Forgot your password?</a>
+                            <div>
+                                <button>Login</button>
+                            </div>
+                            <br>
+                    </form>
+                </div>
             </div>
-    </header>
-    <main>
-        <form action="" method="GET" class="main-block">
-
-
-            <div>
-                <h3>
-                    Login
-                </h3>
-                <div>
-                    <label for="loginUsername"><span class="login-text"><i class="fas fa-user"></i >User Name</span></label>
-                    <input class="input-center1 input" type="text" title="username" name="username" id="loginUsername" value="" placeholder="username" required>
-
-                </div>
-                <div>
-                    <label for="loginPassword"><span class="login-text"><i class="fas fa-unlock-alt"></i> Password</span> </label>
-                    <input class="input-center2 input" type="password" title="password" name="password" id="loginPassword" value="" placeholder="password" required>
-                </div>
-                <div>
-                    <input style="margin-left: 150px;" type="checkbox" title="checkbox" name="checkbox" id="loginCheckbox">
-                    <label for="loginCheckbox"><span class="login-text">Remeber Me</span></label>
-                </div>
-                <div>
-                    <input class="send" type="submit" value="Send">
-
-                </div>
-
-
-
-        </form>
-    </main>
+        </main>
+        <footer>
+            <div> WeMakeYouWebsite &copy; telephone +8800553535 email: wemakeyouwebsite@gamil.com</div>
+        </footer>
+    </div>
 
 </body>
 

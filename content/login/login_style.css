@@ -1,3 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.grid-wrapper {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4 25%);
+    grid-template-rows: 60px auto 40px;
+    grid-template-areas: "header header header header" "main main main main" "footer footer footer footer";
+    gap: 10px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    grid-area: header;
+    background-color: white;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+header img {
+    border-radius: 20px;
+    max-width: 120px;
+    padding: 10px;
+}
+
+header nav {
+    padding: 10px;
+    display: flex;
+    margin-right: 20px;
+}
+
+.menu-button {
+    display: inline-block;
+    text-decoration: none;
+    background-color: white;
+    color: #0067b8;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+.menu-button:hover {
+    text-decoration: underline;
+}
+
+.menu-collapse {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    background-color: white;
+    color: #0067b8;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+.ul {
+    position: absolute;
+    display: none;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    width: 100%;
+}
+
+.ul li {
+    background-color: white;
+    display: block;
+}
+
+.ul li a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: white;
+    color: #0067b8;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px 10px;
+    border-radius: 3px;
+    width: 100%;
+}
+
+.ul li a:hover {
+    background-color: #0067b8;
+    color: white;
+}
+
+.menu-collapse:hover .ul {
+    display: block;
+}
+
+.transform-arrow {
+    transform: rotate(0);
+}
+
+.menu-collapse:hover .transform-arrow {
+    transform: rotate(180deg);
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #0067b8;
+}
+
+footer div {
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+
 .main-block {
     width: 400px;
     height: 400px;
@@ -53,4 +174,67 @@ h3 {
 
 .input:hover {
     border: 1px solid rgb(7, 74, 151);
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 50px;
+    height: 100%;
+    text-align: center;
+}
+
+.login-box div button {
+    border-radius: 20px;
+    border: 1px solid rgb(39, 39, 114);
+    background-color: #ffffff;
+    color: #303ac5;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+button:focus {
+    outline: none;
+}
+
+button.ghost {
+    background-color: transparent;
+    border-color: #FFFFFF;
+}
+
+.login-box {
+    flex: 1 0 30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 25.5rem;
+    background-color: royalblue;
+    flex-grow: 1;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.login-box div input {
+    background-color: #eee;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 100%;
+}
+
+.first-block {
+    gap: 10px;
+    display: flex;
+    padding: 20px 40px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }

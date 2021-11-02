@@ -29,67 +29,78 @@
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="index.style.css">
     <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
-    <header>
+    <div class="grid-wrapper">
+        <header>
+            <img src="./content/img/Lo_Go.png" alt="JavaScript Logo">
+            <nav class="div-leayer">
+                <div>
+
+                    <a class="menu-button" href="./content/offer/offer.html">About Us</a>
+                    <a class="menu-button" href="./content/login/login.htm">LogIn</a>
+                    <a class="menu-button" href="./content/regist/regist.html">Registration</a>
+                    <ul class="menu-collapse">Offers <i class="fas fa-chevron-down transform-arrow"></i>
+                        <ul class="ul">
+                            <li><a href="#">Website</a></li>
+                            <li><a href="#">Aplication</a></li>
+                        </ul>
+                    </ul>
+                    <ul class="menu-collapse">
+                        Login <i class="fas fa-chevron-down transform-arrow"></i>
+                        <ul class="ul">
+                            <li><a href="#">Create Account</a></li>
+                            <li><a href="./content/login/login.htm">I have one!</a></li>
+                        </ul>
+                    </ul>
+                </div>
+            </nav>
+        </header>
 
 
-        <nav class="div-leayer">
+        <div class="about-us">
             <div>
-                <img src="./content/img/JS_logo.png" alt="JavaScript Logo" style="width: 3%"> Menu
-                <a class="menu-button" href="./content/offer/offer.html">Offer</a>
-                <a class="menu-button" href="./content/login/login.htm">LogIn</a>
-                <a class="menu-button" href="./content/regist/regist.html">Registration</a>
-                <ul class="menu-collapse">About Us <i class="fas fa-arrow-down transform-arrow"></i>
-                    <ul class="ul">
-                        <li><a href="#">Dwa</a></li>
-                        <li><a href="#">Dwa</a></li>
-                        <li><a href="#">Dwa</a></li>
-                    </ul>
-                </ul>
-                <ul class="menu-collapse">
-                    Contact <i class="fas fa-arrow-down transform-arrow"></i>
-                    <ul class="ul">
-                        <li><a href="#">Raz</a></li>
-                        <li><a href="#">Raz</a></li>
-                        <li><a href="#">Raz</a></li>
-                    </ul>
-                </ul>
+                <h1>Make your dreams come true whith us!</h1>
+                <h2>Offer yourself a good website</h2>
+                <button>Get Started</button>
+
             </div>
-    </header>
-    <div>
 
+            <img class="about-us-img" src="./content/img/Responsive-Design-with-Blog-Guru.png" alt="Work in progress">
+        </div>
+        <!-- <main>
+            <h1>Main Page</h1>
+
+            <h2>WELCOME</h2>
+
+            <p>We work in:</p>
+
+            <nav>
+                <a href="https://www.w3schools.com/html/">HTML</a> |
+                <a href="https://www.w3schools.com/css/">CSS</a> |
+                <a href="https://www.w3schools.com/js/">JavaScript</a> |
+                <a href="https://www.w3schools.com/python/">Python</a>
+            </nav>
+
+            <h3>We offer</h3>
+
+            <ol>
+                <li>Blogs</li>
+                <li>Market Place</li>
+                <li>Social Web</li>
+                <li>Business card website</li>
+            </ol>
+            <p>Watch more offers <a href="./content/offer/offer.html">her</a></p>
+        </main> -->
+        <footer>
+            <div> WeMakeYouWebsite &copy; telephone +8800553535 email: wemakeyouwebsite@gamil.com</div>
+        </footer>
     </div>
-    <h1>Main Page</h1>
-    <main>
-        <div><img src="./content/img/mainPict.jpg" alt="Work in progress" style="width: 60%"></div>
-        <h2>WELCOME</h2>
-        <p>We are small company WeMakeYouWebsite! We offer you high quality website. Look at ower <a href="./content/offer/offer.html">offers</a> and read about us <a href="./content/aboutUs/aboutUs.html">her</a>!</p>
-        <p>We work in:</p>
-
-        <nav>
-            <a href="https://www.w3schools.com/html/">HTML</a> |
-            <a href="https://www.w3schools.com/css/">CSS</a> |
-            <a href="https://www.w3schools.com/js/">JavaScript</a> |
-            <a href="https://www.w3schools.com/python/">Python</a>
-        </nav>
-
-        <h3>We offer</h3>
-
-        <ol>
-            <li>Blogs</li>
-            <li>Market Place</li>
-            <li>Social Web</li>
-            <li>Business card website</li>
-        </ol>
-        <p>Watch more offers <a href="./content/offer/offer.html">her</a></p>
-    </main>
-    <footer>
-        WeMakeYouWebsite &copy; telephone +8800553535 email: wemakeyouwebsite@gamil.com
-    </footer>
-
 </body>
 
 </html>
