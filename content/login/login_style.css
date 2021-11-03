@@ -168,6 +168,14 @@ h3 {
     border-radius: 10px;
 }
 
+.first-block {
+    gap: 10px;
+    display: flex;
+    padding: 20px 40px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
 .send:active {
     background-color: rgb(6, 56, 90);
 }

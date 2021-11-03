@@ -1,0 +1,66 @@
+header {
+  color: pink;
+  border-radius: 10px;
+}
+
+body {
+  background-color: #0067b8;
+}
+body:hover {
+  color: white;
+}
+
+.button-alt {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: red;
+  color: white;
+}
+
+.button-alt {
+  color: black;
+}
+
+.alert {
+  background-color: white;
+  color: blue;
+  padding: 10px;
+}
+
+.icon-10px {
+  font-size: 10px;
+  background-color: red;
+}
+
+.icon-20px {
+  font-size: 20px;
+}
+
+.icon-30px {
+  font-size: 30px;
+}
+
+.alert {
+  display: block;
+  padding: 1rem 2rem;
+  border-radius: 3px;
+}
+
+.alert-success {
+  background-color: green;
+  font-size: 1rem;
+}
+.alert-danger {
+  background-color: red;
+  font-size: 1rem;
+}
+.alert-info {
+  background-color: blue;
+  font-size: 1rem;
+}
+.alert-warning {
+  background-color: yellow;
+  font-size: 1rem;
+}
+
+/*# sourceMappingURL=sass.css.map */
