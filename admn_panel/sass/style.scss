@@ -1,0 +1,46 @@
+@import 'variables';
+@import '../node_modules/bootstrap/scss/bootstrap';
+@import '../node_modules/@fortawesome/fontawesome-free/scss/brands';
+@import '../node_modules/@fortawesome/fontawesome-free/scss/regular';
+@import '../node_modules/@fortawesome/fontawesome-free/scss/solid';
+@import '../node_modules/@fortawesome/fontawesome-free/scss/fontawesome';
+@import 'animation';
+.card {
+    animation-name: fadeInDown;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-delay: 500ms;
+}
+
+.user-trumb {
+    display: inline-block;
+    width: 4rem;
+    height: 4rem;
+    i {
+        line-height: 4rem;
+    }
+}
+
+.main-wrapper {
+    max-height: 100vh;
+}
+
+.aside-wrapper {
+    display: none;
+    @include media-breakpoint-up(lg) {
+        display: block;
+    }
+}
+
+body.menu-open .aside-wrapper {
+    display: block;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 80%;
+    @include media-breakpoint-up(lg) {
+        position: static;
+    }
+}
