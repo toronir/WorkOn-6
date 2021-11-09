@@ -4804,7 +4804,7 @@ textarea.form-control-lg {
 
 .alert {
   position: relative;
-  padding: 0.5rem 1rem;
+  padding: 1rem 1rem;
   margin-bottom: 1rem;
   border: 1px solid transparent;
   border-radius: 0.25rem;
@@ -4826,7 +4826,7 @@ textarea.form-control-lg {
   top: 0;
   right: 0;
   z-index: 2;
-  padding: 0.625rem 1rem;
+  padding: 1.25rem 1rem;
 }
 
 .alert-primary {
@@ -6693,7 +6693,7 @@ textarea.form-control-lg {
   border: 0 !important;
 }
 
-.border-top, footer {
+.border-top {
   border-top: 1px solid #dee2e6 !important;
 }
 
@@ -7609,7 +7609,7 @@ textarea.form-control-lg {
   color: rgba(var(--bs-body-color-rgb), var(--bs-text-opacity)) !important;
 }
 
-.text-muted, footer {
+.text-muted {
   --bs-text-opacity: 1;
   color: #6c757d !important;
 }
@@ -8593,7 +8593,7 @@ textarea.form-control-lg {
     justify-content: center !important;
   }
 
-  .justify-content-md-between, footer {
+  .justify-content-md-between {
     justify-content: space-between !important;
   }
 
@@ -9164,7 +9164,7 @@ textarea.form-control-lg {
     flex: 1 1 auto !important;
   }
 
-  .flex-lg-row, footer {
+  .flex-lg-row {
     flex-direction: row !important;
   }
 
@@ -11127,8 +11127,8 @@ textarea.form-control-lg {
   font-style: normal;
   font-weight: 400;
   font-display: block;
-  src: url("../fonts/font-awesome/fa-brands-400.eot");
-  src: url("../fonts/font-awesome/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../fonts/font-awesome/fa-brands-400.woff2") format("woff2"), url("../fonts/font-awesome/fa-brands-400.woff") format("woff"), url("../fonts/font-awesome/fa-brands-400.ttf") format("truetype"), url("../fonts/font-awesome/fa-brands-400.svg#fontawesome") format("svg");
+  src: url("../webfonts/fa-brands-400.eot");
+  src: url("../webfonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-brands-400.woff2") format("woff2"), url("../webfonts/fa-brands-400.woff") format("woff"), url("../webfonts/fa-brands-400.ttf") format("truetype"), url("../webfonts/fa-brands-400.svg#fontawesome") format("svg");
 }
 .fab {
   font-family: "Font Awesome 5 Brands";
@@ -11144,8 +11144,8 @@ textarea.form-control-lg {
   font-style: normal;
   font-weight: 400;
   font-display: block;
-  src: url("../fonts/font-awesome/fa-regular-400.eot");
-  src: url("../fonts/font-awesome/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("../fonts/font-awesome/fa-regular-400.woff2") format("woff2"), url("../fonts/font-awesome/fa-regular-400.woff") format("woff"), url("../fonts/font-awesome/fa-regular-400.ttf") format("truetype"), url("../fonts/font-awesome/fa-regular-400.svg#fontawesome") format("svg");
+  src: url("../webfonts/fa-regular-400.eot");
+  src: url("../webfonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-regular-400.woff2") format("woff2"), url("../webfonts/fa-regular-400.woff") format("woff"), url("../webfonts/fa-regular-400.ttf") format("truetype"), url("../webfonts/fa-regular-400.svg#fontawesome") format("svg");
 }
 .far {
   font-family: "Font Awesome 5 Free";
@@ -11161,8 +11161,8 @@ textarea.form-control-lg {
   font-style: normal;
   font-weight: 900;
   font-display: block;
-  src: url("../fonts/font-awesome/fa-solid-900.eot");
-  src: url("../fonts/font-awesome/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../fonts/font-awesome/fa-solid-900.woff2") format("woff2"), url("../fonts/font-awesome/fa-solid-900.woff") format("woff"), url("../fonts/font-awesome/fa-solid-900.ttf") format("truetype"), url("../fonts/font-awesome/fa-solid-900.svg#fontawesome") format("svg");
+  src: url("../webfonts/fa-solid-900.eot");
+  src: url("../webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-solid-900.woff2") format("woff2"), url("../webfonts/fa-solid-900.woff") format("woff"), url("../webfonts/fa-solid-900.ttf") format("truetype"), url("../webfonts/fa-solid-900.svg#fontawesome") format("svg");
 }
 .fa,
 .fas {
@@ -17232,120 +17232,40 @@ readers do not read off random characters that represent icons */
   width: auto;
 }
 
-@keyframes fadeInDown {
-  0% {
-    opacity: 0;
-    transform: translate3d(0, -100%, 0);
-  }
-  100% {
-    opacity: 1;
-    transform: none;
-  }
+header {
+  padding: 1rem 0;
+  border-bottom: 1px solid #0d6efd;
+  box-shadow: 0 0 1rem black;
 }
-.login {
-  display: flex;
-  align-items: center;
-  min-height: 100vh;
-  background-color: #f8f9fa;
+header .menu-wrapper {
+  text-align: right;
 }
-.login i {
-  color: #0d6efd;
+header i {
+  font-size: 3rem;
 }
-.login form > div {
+header img {
+  max-width: 5 rem;
+  height: auto;
+}
+header nav ul {
+  margin: 2rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+header nav ul lo:not(:last-child) {
   margin-bottom: 1rem;
 }
 
-main {
-  flex: 1;
-}
-
-footer {
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  background-color: white;
-  padding: 1rem 2rem;
-}
-
-.card {
-  animation-name: fadeInDown;
-  animation-duration: 1s;
-  animation-fill-mode: both;
-  animation-delay: 500ms;
-}
-
-.user-trumb {
-  display: inline-block;
-  width: 4rem;
-  height: 4rem;
-}
-.user-trumb i {
-  line-height: 4rem;
-}
-
-aside {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: #212529;
-  min-height: 100vh;
-  padding: 1.5rem;
-  border-right: 4px solid #0d6efd;
-}
-
-.main-wrapper {
-  height: 100vh;
-}
-
-.aside-wrapper {
-  display: none;
-}
-@media (min-width: 992px) {
-  .aside-wrapper {
-    display: block;
-  }
-}
-
-.button-show {
-  display: none;
-}
-@media (min-width: 992px) {
-  .button-show {
-    display: block;
-  }
-}
-
-.button-hide {
+.menu-open header nav {
   display: block;
 }
-@media (min-width: 992px) {
-  .button-hide {
-    display: none;
-  }
+
+html {
+  font-size: 10px;
 }
 
-@media (min-width: 992px) {
-  .button-style {
-    display: flex;
-    justify-content: space-between;
-  }
+body {
+  font-size: 1.6rem;
 }
 
-body.menu-open .aside-wrapper {
-  display: block;
-  position: fixed;
-  z-index: 10;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 80%;
-}
-@media (min-width: 992px) {
-  body.menu-open .aside-wrapper {
-    position: static;
-  }
-}
-
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=sass.css.map */

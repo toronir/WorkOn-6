@@ -1,0 +1,12 @@
+.login {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background-color: $light;
+    i {
+        color: $primary;
+    }
+    form>div {
+        margin-bottom: 1rem;
+    }
+}

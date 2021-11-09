@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="bg-light min-vh-100">
+    <!-- Tramb start -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4 col-xl-3 col-xxl-2 px-0 aside-wrapper">
+                <aside>
+
+                    <div class="position-absolute top-0 end-0 m-3 d-lg-none">
+                        <button class="btn btn-warning" onclick="document.body.classList.toggle('menu-open')">
+                            <i class=" fas fa-times "></i>
+                        </button>
+                    </div>
+
+                    <div class="text-center ">
+                        <div class="bg-light mb-3 rounded-circle user-trumb ">
+                            <i class="fas fa-user fa-2x "></i>
+                        </div>
+                        <div class="text-center text-light ">Hi <b>Jakub</b>!</div>
+                    </div>
+                    <!-- Tramb end -->
+
+                    <!-- Menu start -->
+                    <div class="text-light my-3 ">
+                        <ul class="nav nav-pills flex-column ">
+                            <li class="nav-item ">
+                                <a class="nav-link  " href="./dashboard.html "><i class="fas fa-database fa-fw me-2 "></i>Dashboard</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link " href="./users.html "><i class="fas fa-users fa-fw me-2 "></i> Users</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link active " href="./offer.html "><i class="fas fa-coffee fa-fw me-2 "></i> Offer</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link " href="./index.html "><i class="fas fa-arrow-left fa-fw me-2 "></i> LogOut</a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <!-- Menu end -->
+
+                    <div class="text-center text-muted ">&copy; Admin Panel 2077</div>
+                </aside>
+
+                <!-- Header start -->
+
+            </div>
+            <div class="col-lg-8 col-xl-9 col-xxl-10 px-0 main-wrapper d-flex flex-column ">
+                <header>
+                    <div class="d-flex justify-content-between bg-white border-bottom px-4 py-2 mb-3  ">
+
+                        <div>
+                            <button class="btn btn-outline-secontary d-lg-none " onclick="document.body.classList.toggle( 'menu-open') "><i class="fas fa-bars "></i></button>
+                        </div>
+
+
+                        <form action="# " class="d-flex ">
+                            <input type="text " class="form-control me-2 " placeholder="Looking... ">
+                            <button class="btn btn-outline-success "><i class="fas fa-search "></i></button>
+                        </form>
+
+                    </div>
+                    <div class="px-4 button-style">
+                        <h1><i class="fas fa-coffee "></i> Offer</h1>
+
+
+                    </div>
+                </header>
+
+                <!-- Header end -->
+
+                <!-- Main start -->
+
+                <main class="flex-1 overflow-auto px-4 ">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-6 col-xl-7">
+                                <div class="card my-5 shadow-lg">
+
+                                    <div class="card-body">
+                                        <h3>
+                                            Offer
+                                        </h3>
+                                        <br>
+                                        <form action="#">
+                                            <div class="input-group mb-4">
+                                                <span class="input-group-text" id="basic-addon"><i class="fas fa-user text-primary"></i></span>
+                                                <input type="text" class="form-control" placeholder="First Name" aria-label="Username" aria-describedby="basic-addon1">
+                                            </div>
+                                            <div class="input-group mb-4">
+                                                <span class="input-group-text" id="basic-addon"><i class="fas fa-user text-primary"></i></span>
+                                                <input type="text" class="form-control" placeholder="Second Name" aria-label="Username" aria-describedby="basic-addon1">
+                                            </div>
+                                            <div class="input-group mb-4">
+                                                <span class="input-group-text" id="basic-addon"><i class="fas fa-phone text-primary"></i></span>
+                                                <input type="text" class="form-control" placeholder="Telephone" aria-label="Username" aria-describedby="basic-addon1">
+                                            </div>
+                                            <div class="input-group mb-4">
+                                                <span class="input-group-text" id="basic-addon"><i class="fas fa-folder text-primary"></i></span>
+                                                <select class="form-select form-select " id="">
+                                                    <option selected>Select offer</option>
+                                                    <option value="1">JS</option>
+                                                    <option value="2">PHP</option>
+                                                    <option value="3">C#</option>
+                                                </select>
+                                            </div>
+                                            <div class="mb-3">
+                                                <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Additional information..." rows="3"></textarea>
+                                            </div>
+
+                                            <div class="text-center">
+                                                <button class="btn btn-outline-primary w-auto" data-bs-toggle="modal" data-bs-target="#Error">Send</button>
+                                            </div>
+                                            <br>
+
+                                        </form>
+                                        <div class="d-flex justify-content-between">
+                                            <div class="mb-2"><i class="fas fa-question text-primary"></i>
+                                                <a href="./reset_password.html">Help</a></div>
+                                            <div class="mb-2"><i class="fas fa-user-plus text-primary"></i>
+                                                <a href="./index.html">Login to make things easier</a></div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </main>
+
+                <!-- Main end -->
+
+                <footer class="px-4 py-2 bg-white border-top text-center text-muted d-flex justify-content-md-between flex-column flex-lg-row flex-nowrap align-items-center">
+                    Footer
+                </footer>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="modal" id="Error" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Copy</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        Conection Error
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
