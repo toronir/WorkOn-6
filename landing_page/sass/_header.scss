@@ -1,0 +1,30 @@
+header {
+    padding: 1rem 0;
+    border-bottom: 1px solid $primary;
+    box-shadow: 0 0 1rem rgba($color: #000000, $alpha: 1.0);
+    .menu-wrapper {
+        text-align: right;
+    }
+    i {
+        font-size: 3rem;
+    }
+    img {
+        max-width: 5 rem;
+        height: auto;
+    }
+    nav {
+        //display: none;
+        ul {
+            margin: 2rem 0 0;
+            padding: 0;
+            list-style: none;
+            lo:not(:last-child) {
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}
+
+.menu-open header nav {
+    display: block;
+}
