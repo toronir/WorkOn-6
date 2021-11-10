@@ -1,13 +1,14 @@
+@import 'variables';
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
 @import '../node_modules/@fortawesome/fontawesome-free/scss/brands';
 @import '../node_modules/@fortawesome/fontawesome-free/scss/regular';
 @import '../node_modules/@fortawesome/fontawesome-free/scss/solid';
 @import '../node_modules/@fortawesome/fontawesome-free/scss/fontawesome';
 @import './header';
-html {
-    font-size: 10px;
-}
-
-body {
-    font-size: 1.6rem;
-}
+@import './start';
+@import './quote';
+@import'./functional';
+@import'./footer';
+//.btn-outline-primary {
+//  background-color: rgba($white);
+//}

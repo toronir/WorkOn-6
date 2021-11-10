@@ -7,21 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="css/sass.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <div class="container-fluid">
-            <div class="row">
+            <div class="row justify-content-between">
                 <div class="col-4">
-                    <img src="" alt="">
+                    <img src="./img/among-us-player-white-512.webp" alt="Logo" class="header--logo">
                 </div>
-                <div class="col-8 menu-wrapper">
-                    <i class="fas fa-bars" onclick="docement.body.classList.toggle('menu-open')">
-    
-                    </i>
-                    <nav>
+                <div class="col-8  col-xl-6 col-xxl-5">
+                    <div class="header--menu-toggle-wrapper">
+                        <i class="fas fa-bars" onclick="document.body.classList.toggle('menu-open')"></i>
+                    </div>
+                    <nav class="header--nav">
                         <ul>
                             <li><a href="#start">Start</a></li>
                             <li><a href="#quote">Quote</a></li>
@@ -34,11 +38,202 @@
             </div>
         </div>
     </header>
-    <section class="start" name="start" id=""></section>
-    <section class="quote" namequote id=""></section>
-    <section class="testimonials" nametestimonials id=""></section>
-    <section class="opinion" namenews id=""></section>
-    <section class="news" name="footer" id=""></section>
+    <section class="start" name="start" id="">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6" data-aos="fade-up">
+                    <h1 class="start--heading">Best in the world</h1>
+                    <p class="start--description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam eius eos, et incidunt, dicta modi porro soluta explicabo, excepturi tempore voluptas debitis culpa hic ut similique tempora. Fuga, quisquam temporibus.
+                    </p>
+                    <a href="" class="btn btn-primary btn-lg">Regist</a>
+                    <a href="#testimonials" class="btn btn-outline-primary btn-lg">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="quote" namequote id="">
+        <div class="container">
+            <div class="row">
+                <div class="col" data-aos="fade-up">
+                    <div class="quote--icon">
+                        <i class="fas fa-quote-left quote--icon"></i>
+                    </div>
+                    <i class="quote--content">
+                        I wona hamburger, and i wona it right now
+                    </i>
+                    <div class="quote--signature">
+                        Jason Statham
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="functional" name='functional' id="">
+        <div class="container " data-aos="fade-up">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-xxl-7">
+                    <h2 class="functional--heading">Hi</h2>
+                    <p class="functional--description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta laudantium sapiente adipisci repellendus, nihil esse quia molestiae praesentium, sed at earum nemo ipsam provident commodi. Voluptatibus non quisquam esse distinctio.</p>
+                </div>
+            </div>
+            <div class="row" data-aos="fade-up">
+                <div class="col-sm-6 col-xl-4 col-xxl-3 functional--item-wrapper">
+                    <div class="functional--item">
+                        <div class="functional--item-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="functional--item-heading">By</h3>
+                        <p class="functional-item--description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta laudantium sapiente adipisci repellendus, nihil esse quia molestiae praesentium, sed at earum nemo ipsam provident commodi. Voluptatibus non quisquam esse distinctio.</p>
+
+                    </div>
+                </div>
+
+
+                <div class="col-sm-6 col-xl-4 col-xxl-3 functional--item-wrapper">
+                    <div class="functional--item">
+                        <div class="functional--item-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="functional--item-heading">By</h3>
+                        <p class="functional-item--description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta laudantium sapiente adipisci repellendus, nihil esse quia molestiae praesentium, sed at earum nemo ipsam provident commodi. Voluptatibus non quisquam esse distinctio.</p>
+
+                    </div>
+                </div>
+
+
+                <div class="col-sm-6 col-xl-4 col-xxl-3 functional--item-wrapper">
+                    <div class="functional--item">
+                        <div class="functional--item-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="functional--item-heading">By</h3>
+                        <p class="functional-item--description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta laudantium sapiente adipisci repellendus, nihil esse quia molestiae praesentium, sed at earum nemo ipsam provident commodi. Voluptatibus non quisquam esse distinctio.</p>
+
+                    </div>
+                </div>
+
+
+                <div class="col-sm-6 col-xl-4 col-xxl-3 functional--item-wrapper">
+                    <div class="functional--item">
+                        <div class="functional--item-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="functional--item-heading">By</h3>
+                        <p class="functional-item--description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta laudantium sapiente adipisci repellendus, nihil esse quia molestiae praesentium, sed at earum nemo ipsam provident commodi. Voluptatibus non quisquam esse distinctio.</p>
+
+                    </div>
+                </div>
+
+
+                <div class="col-sm-6 col-xl-4 col-xxl-3 functional--item-wrapper">
+                    <div class="functional--item">
+                        <div class="functional--item-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="functional--item-heading">By</h3>
+                        <p class="functional-item--description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta laudantium sapiente adipisci repellendus, nihil esse quia molestiae praesentium, sed at earum nemo ipsam provident commodi. Voluptatibus non quisquam esse distinctio.</p>
+
+                    </div>
+                </div>
+
+
+                <div class="col-sm-6 col-xl-4 col-xxl-3 functional--item-wrapper">
+                    <div class="functional--item">
+                        <div class="functional--item-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="functional--item-heading">By</h3>
+                        <p class="functional-item--description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta laudantium sapiente adipisci repellendus, nihil esse quia molestiae praesentium, sed at earum nemo ipsam provident commodi. Voluptatibus non quisquam esse distinctio.</p>
+
+                    </div>
+                </div>
+
+
+                <div class="col-sm-6 col-xl-4 col-xxl-3 functional--item-wrapper">
+                    <div class="functional--item">
+                        <div class="functional--item-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="functional--item-heading">By</h3>
+                        <p class="functional-item--description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta laudantium sapiente adipisci repellendus, nihil esse quia molestiae praesentium, sed at earum nemo ipsam provident commodi. Voluptatibus non quisquam esse distinctio.</p>
+
+                    </div>
+                </div>
+
+
+                <div class="col-sm-6 col-xl-4 col-xxl-3 functional--item-wrapper">
+                    <div class="functional--item functional--item__contact">
+                        <h3 class="functional--item-heading">By</h3>
+                        <a href="#" class="btn btn-outline-light btn-lg">Contact Us</a>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="opinion" name='opinion' id=""></section>
+    <section class="news" name="news" id=""></section>
+
+    <footer class="footer">
+        <div class="content">
+            <div class="row">
+                <div class="footer--row">
+                    <div class="footer--menu  col-9 col-lg-8">
+                        <ul>
+                            <li>About us</li>
+                            <li>Contact</li>
+                            <li>Offer</li>
+                            <li>More info</li>
+                        </ul>
+                        <ul>
+                            <li>Reglament</li>
+                            <li>Privacy</li>
+                        </ul>
+                    </div>
+                    <div class="footer--icon col-3 col-lg-1  ">
+                        <a href="" class="btn btn-outline-primary ">
+                            <i class="fas fa-user fa-fw"></i>
+                        </a>
+
+                        <a href="" class="btn btn-outline-primary ">
+                            <i class="fas fa-text-height fa-fw"></i>
+                        </a>
+                        <a href="" class="btn btn-outline-primary ">
+                            <i class="fas fa-book fa-fw"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer--bottom-text">
+                    <p>&copy; IntelCage 2077</p>
+                    <p>Vladzimr Pranik</p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+
+
+
+
+    <script>
+        AOS.init();
+
+
+        $('.testimonails--slider').slick({
+            nextArrow: $('.fa-chevron-right'),
+            prevArrow: $('.fa-chevron-left'),
+        });
+    </script>
 
 
 </body>
