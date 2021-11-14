@@ -1,0 +1,97 @@
+@import 'variables';
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import '../node_modules/@fortawesome/fontawesome-free/scss/brands';
+@import '../node_modules/@fortawesome/fontawesome-free/scss/regular';
+@import '../node_modules/@fortawesome/fontawesome-free/scss/solid';
+@import '../node_modules/@fortawesome/fontawesome-free/scss/fontawesome';
+@import 'animation';
+@import './auth';
+@import './dashboard';
+main {
+    flex: 1;
+}
+
+footer {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    @extend .text-muted,
+    .justify-content-md-between,
+    .flex-lg-row,
+    .border-top;
+    text-align: center;
+    background-color: white;
+    padding: 1rem 2rem;
+}
+
+.card {
+    animation-name: fadeInDown;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-delay: 500ms;
+}
+
+.user-trumb {
+    display: inline-block;
+    width: 4rem;
+    height: 4rem;
+    i {
+        line-height: 4rem;
+    }
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: $dark;
+    min-height: 100vh;
+    padding: 1.5rem;
+    border-right: 4px solid $primary;
+}
+
+.main-wrapper {
+    height: 100vh;
+}
+
+.aside-wrapper {
+    display: none;
+    @include media-breakpoint-up(lg) {
+        display: block;
+    }
+}
+
+.button-show {
+    display: none;
+    @include media-breakpoint-up(lg) {
+        display: block;
+    }
+}
+
+.button-hide {
+    display: block;
+    @include media-breakpoint-up(lg) {
+        display: none;
+    }
+}
+
+.button-style {
+    @include media-breakpoint-up(lg) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+body.menu-open .aside-wrapper {
+    display: block;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 80%;
+    @include media-breakpoint-up(lg) {
+        position: static;
+    }
+}

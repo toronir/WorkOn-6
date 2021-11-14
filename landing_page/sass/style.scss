@@ -1,0 +1,18 @@
+@import 'variables';
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import '../node_modules/@fortawesome/fontawesome-free/scss/brands';
+@import '../node_modules/@fortawesome/fontawesome-free/scss/regular';
+@import '../node_modules/@fortawesome/fontawesome-free/scss/solid';
+@import '../node_modules/@fortawesome/fontawesome-free/scss/fontawesome';
+@import './header';
+@import './start';
+@import './quote';
+@import'./functional';
+@import'./footer';
+@import'./opinion';
+@import'./news';
+
+
+//.btn-outline-primary {
+//  background-color: rgba($white);
+//}

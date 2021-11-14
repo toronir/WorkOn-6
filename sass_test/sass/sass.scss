@@ -1,0 +1,91 @@
+ @import 'variables';
+ @import './header';
+ body {
+     background-color: #0067b8;
+     &:hover {
+         color: $text-color;
+     }
+ }
+ 
+ %button {
+     display: inline-block;
+     padding: 10px 20px;
+     background-color: red;
+     color: white;
+ }
+ 
+ .button-alt {
+     @extend %button;
+     color: black;
+ }
+ 
+ @mixin alert($color-alert, $bg-color: red) {
+     background-color: $bg-color;
+     color: $color-alert;
+     padding: 10px;
+ }
+ 
+ .alert {
+     @include alert(blue, white);
+ }
+ 
+ $sizes: 10px,
+ 20px,
+ 30px;
+ @each $size in $sizes {
+     .icon-#{$size} {
+         font-size: $size;
+         @if $size==10px {
+             background-color: red;
+         }
+     }
+ }
+ 
+ %alert {
+     display: block;
+     padding: 1rem 2rem;
+     border-radius: 3px;
+ }
+ 
+ @mixin alert($type:'base', $size:'base') {
+     @if $type=='success' {
+         background-color: green;
+     }
+     @else if $type=='danger' {
+         background-color: red;
+     }
+     @else if $type=='warning' {
+         background-color: yellow;
+     }
+     @else if $type=='info' {
+         background-color: blue;
+     }
+     @else {
+         background-color: #ccc;
+     }
+     @if $size=='large' {
+         font-size: 2rem;
+     }
+     @else if $size=='small' {
+         font-size: 0.7;
+     }
+     @else {
+         font-size: 1rem;
+     }
+ }
+ 
+ .alert {
+     @extend %alert;
+     &-success {
+         @include alert('success')
+     }
+     &-danger {
+         @include alert('danger')
+     }
+     &-info {
+         @include alert('info')
+     }
+     &-warning {
+         @include alert('warning')
+     }
+ }

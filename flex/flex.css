@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+.wrapper {
+    max-width: 1295px;
+    margin: auto;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -24,9 +29,18 @@ header img {
     max-width: 100px;
 }
 
-@media (min-width: 500px) {
+@media (max-width: 600px) {
     header {
         flex-direction: row;
+    }
+    .main-img {
+        width: 100%;
+    }
+    .first-block {
+        flex-direction: column;
+    }
+    .cards {
+        flex-direction: column;
     }
 }
 
@@ -39,12 +53,14 @@ header img {
 }
 
 .main-img {
+    flex: 1 0 70%;
     max-width: 52.5rem;
     flex-grow: 4;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .login-box {
+    flex: 1 0 30%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -56,100 +72,111 @@ header img {
 
 .login-box div input {
     background-color: #eee;
-	border: none;
-	padding: 12px 15px;
-	margin: 8px 0;
-	width: 100%;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 100%;
 }
+
 a {
-	color: #333;
-	font-size: 14px;
-	text-decoration: none;
-	margin: 15px 0;
+    color: #333;
+    font-size: 14px;
+    text-decoration: none;
+    margin: 15px 0;
     color: white;
 }
+
 h2 {
-	font-weight: bold;
-	padding: 10px 5px;
+    font-weight: bold;
+    padding: 10px 5px;
     color: white;
 }
+
 h1 {
     text-align: center;
-	font-weight: bold;
-	margin: 0;
+    font-weight: bold;
+    margin: 0;
     color: royalblue;
 }
 
 form {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	padding: 0px 50px;
-	height: 100%;
-	text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 50px;
+    height: 100%;
+    text-align: center;
 }
 
 .login-box div button {
-        border-radius: 20px;
-        border: 1px solid rgb(39, 39, 114);
-        background-color: #ffffff;
-        color: #303ac5;
-        font-size: 12px;
-        font-weight: bold;
-        padding: 12px 45px 12px 45px;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        transition: transform 80ms ease-in;
+    border-radius: 20px;
+    border: 1px solid rgb(39, 39, 114);
+    background-color: #ffffff;
+    color: #303ac5;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
 }
+
 button:active {
-	transform: scale(0.95);
+    transform: scale(0.95);
 }
 
 button:focus {
-	outline: none;
+    outline: none;
 }
 
 button.ghost {
-	background-color: transparent;
-	border-color: #FFFFFF;
+    background-color: transparent;
+    border-color: #FFFFFF;
 }
 
 .cards {
     justify-content: space-evenly;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    
-  }
-  .card {
-      
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.card {
     width: 23.1rem;
-    margin: 10px;
+    margin: 30px;
     border: 1px solid #ccc;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  } 
-  .card h2{
-      color: royalblue;
-  }
-  .card img {
+}
+
+.card h2 {
+    color: royalblue;
+}
+
+.card img {
     display: flex;
     align-items: center;
-    max-width:100%;
-  }
-  .card .text {
+    max-width: 100%;
+}
+
+.card .text {
     padding: 30px;
-  }
-  .diff-box{
-      display: flex;
-      padding: 10px;
-      gap: 40px;
-      align-items: center;
-  }
-  .spec-h3{
-      text-align: center;
-  }
-  .card .text > button {
+}
+
+.diff-box {
+    display: flex;
+    padding: 10px;
+    gap: 40px;
+    align-items: center;
+}
+
+.spec-h3 {
+    text-align: center;
+    margin-left: 15px;
+}
+
+.card .text>button {
     width: 100%;
     border-radius: 20px;
     border: 1px solid rgb(39, 39, 114);
@@ -161,23 +188,24 @@ button.ghost {
     letter-spacing: 1px;
     text-transform: uppercase;
     transition: transform 80ms ease-in;
-    }
-    .card .text div > button {
-        width: 100%;
-        border-radius: 20px;
-        border: 1px solid rgb(39, 39, 114);
-        background-color: #ffffff;
-        color: #303ac5;
-        font-size: 12px;
-        font-weight: bold;
-        padding: 10px;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        transition: transform 80ms ease-in;
-        }
-    .card-last {
-        /* margin-left: auto; */
-        width: 100px;
-      }
+}
 
+.card .text div>button {
+    width: 100%;
+    border-radius: 20px;
+    border: 1px solid rgb(39, 39, 114);
+    background-color: #ffffff;
+    color: #303ac5;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+}
 
+.card-last {
+    margin-left: auto;
+    width: 200px;
+    align-self: end;
+}

@@ -1,0 +1,41 @@
+.news{
+    &--block{
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+        margin: 3rem 3rem 5rem 3rem;
+        @include media-breakpoint-up(lg) {
+            flex-direction: row;
+
+    }
+    }
+    &--disc{ 
+        display: flex;
+        
+        margin-right: 2rem;
+        margin-bottom: 2rem;
+        color: $text-muted;
+        @include media-breakpoint-up(lg) {
+            margin-bottom: 0;
+            
+
+    }
+    }
+    &--send-block{
+        display: flex;
+        margin-right: 4rem;
+        flex-direction: column;
+        h3{
+            margin-bottom: 2rem;
+        }
+        @include media-breakpoint-up(lg){
+            margin-right: 2rem;
+        }
+    }
+    &--icon-send{
+        background-color: $primary;
+        i{
+            color: white;
+        }
+    }
+}
