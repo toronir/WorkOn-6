@@ -17634,6 +17634,7 @@ readers do not read off random characters that represent icons */
 .footer--menu ul li {
   display: flex;
   flex-wrap: nowrap;
+  margin-bottom: 1rem;
 }
 .footer--menu ul li:hover {
   color: #6c757d;
@@ -17650,6 +17651,7 @@ readers do not read off random characters that represent icons */
   padding-right: 2rem;
 }
 .footer--icon a {
+  margin: 1rem;
   border-radius: 50%;
   background-color: #fff;
 }
@@ -17669,6 +17671,101 @@ readers do not read off random characters that represent icons */
     text-align: justify;
     justify-content: space-between;
   }
+}
+
+.opinion {
+  padding: 10rem 0;
+}
+.opinion--heading {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.opinion--description {
+  text-align: center;
+  color: #6c757d;
+  margin-bottom: 3rem;
+}
+.opinion--item {
+  height: 100%;
+  position: relative;
+  padding: 4rem 2rem 2rem;
+  border-radius: 0.25rem;
+}
+.opinion--item__contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #0d6efd;
+  color: white;
+  text-align: center;
+}
+.opinion-item-wrapper {
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+@media (min-width: 992px) {
+  .opinion-item-wrapper {
+    padding-top: 5rem;
+  }
+}
+.opinion--item-box {
+  display: flex;
+  margin-bottom: 2rem;
+}
+.opinion--icon {
+  display: flex;
+  margin-right: 2rem;
+  margin-left: 2rem;
+  align-items: center;
+}
+.opinion--arrow {
+  display: flex;
+  align-items: center;
+  margin: 2rem;
+  color: #6c757d;
+}
+
+.news--block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 3rem 3rem 5rem 3rem;
+}
+@media (min-width: 992px) {
+  .news--block {
+    flex-direction: row;
+  }
+}
+.news--disc {
+  display: flex;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  color: #6c757d;
+}
+@media (min-width: 992px) {
+  .news--disc {
+    margin-bottom: 0;
+  }
+}
+.news--send-block {
+  display: flex;
+  margin-right: 4rem;
+  flex-direction: column;
+}
+.news--send-block h3, .news--send-block .h3 {
+  margin-bottom: 2rem;
+}
+@media (min-width: 992px) {
+  .news--send-block {
+    margin-right: 2rem;
+  }
+}
+.news--icon-send {
+  background-color: #0d6efd;
+}
+.news--icon-send i {
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

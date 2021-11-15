@@ -1,0 +1,52 @@
+.opinion {
+    width: 100vw;
+    padding: 10rem 0;
+    &--heading {
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    &--description {
+        text-align: center;
+        color: $text-muted;
+        margin-bottom: 3rem;
+    }
+    &--item {
+        padding: 4rem 2rem 2rem;
+        border-radius: $border-radius;
+        &__contact {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: $primary;
+            color: white;
+            text-align: center;
+        }
+    }
+    &-item-wrapper {
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+        @include media-breakpoint-up(lg) {
+            padding-top: 5rem;
+        }
+    }
+    &--item-box {
+        display: flex;
+        margin-bottom: 2rem;
+    }
+    &--icon {
+        display: flex;
+        margin-right: 2rem;
+        margin-left: 2rem;
+        align-items: center;
+    }
+    &--arrow {
+        display: flex;
+        align-content: center;
+        margin: 2rem;
+        color: $text-muted;
+    }
+    &--slider {
+        max-width: 100%;
+    }
+}

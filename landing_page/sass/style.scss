@@ -9,6 +9,12 @@
 @import './quote';
 @import'./functional';
 @import'./footer';
+@import'./opinion';
+@import'./news';
 //.btn-outline-primary {
 //  background-color: rgba($white);
 //}
+body {
+    overflow: hidden;
+    width: 100vw;
+}
