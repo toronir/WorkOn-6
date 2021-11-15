@@ -17674,6 +17674,7 @@ readers do not read off random characters that represent icons */
 }
 
 .opinion {
+  width: 100vw;
   padding: 10rem 0;
 }
 .opinion--heading {
@@ -17686,8 +17687,6 @@ readers do not read off random characters that represent icons */
   margin-bottom: 3rem;
 }
 .opinion--item {
-  height: 100%;
-  position: relative;
   padding: 4rem 2rem 2rem;
   border-radius: 0.25rem;
 }
@@ -17724,6 +17723,9 @@ readers do not read off random characters that represent icons */
   align-items: center;
   margin: 2rem;
   color: #6c757d;
+}
+.opinion--slider {
+  max-width: 100%;
 }
 
 .news--block {
