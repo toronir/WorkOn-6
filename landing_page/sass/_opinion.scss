@@ -1,5 +1,4 @@
 .opinion {
-    width: 100vw;
     padding: 10rem 0;
     &--heading {
         margin-bottom: 2rem;
@@ -13,15 +12,6 @@
     &--item {
         padding: 4rem 2rem 2rem;
         border-radius: $border-radius;
-        &__contact {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            background-color: $primary;
-            color: white;
-            text-align: center;
-        }
     }
     &-item-wrapper {
         padding-top: 3rem;
@@ -48,5 +38,9 @@
     }
     &--slider {
         max-width: 100%;
+    }
+    &--slider {
+        display: flex;
+        width: 100vw;
     }
 }

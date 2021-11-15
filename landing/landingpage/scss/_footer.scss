@@ -1,0 +1,9 @@
+.footer {
+    padding: 10rem 0;
+    background-color: $dark;
+
+    &--commercial {
+        display: flex;
+        justify-content: flex-end;
+    }
+}

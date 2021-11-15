@@ -1,0 +1,40 @@
+.quote {
+    padding: 8rem 0;
+    background-color: $primary;
+
+    @include media-breakpoint-up(lg) {
+        padding: 8rem 0 12rem;
+    }
+
+    &--icon {
+        position: relative;
+        top: 3rem;
+        font-size: 4rem;
+        opacity: 0.3;
+
+        @include media-breakpoint-up(lg) {
+            font-size: 8rem;
+        }
+    }
+
+    &--content {
+        padding-left: 2rem;
+        font-style: italic;
+        font-size: 3rem;
+        color: $light;
+
+        @include media-breakpoint-up(lg) {
+            font-size: 4rem;
+            padding-left: 5rem;
+        }
+    }
+
+    &--signature {
+        font-size: 2rem;
+        padding-left: 2rem;
+
+        @include media-breakpoint-up(lg) {
+            padding-left: 5rem;
+        }
+    }
+}

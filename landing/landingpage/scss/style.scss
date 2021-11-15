@@ -1,0 +1,20 @@
+@import 'variables';
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+@import '../node_modules/@fortawesome/fontawesome-free/scss/brands.scss';
+@import '../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import '../node_modules/@fortawesome/fontawesome-free/scss/regular.scss';
+@import '../node_modules/@fortawesome/fontawesome-free/scss/solid.scss';
+
+@import 'footer';
+@import 'functions';
+@import 'header';
+@import 'newsletter';
+@import 'quote';
+@import 'start';
+@import 'testimonials';
+
+.btn-outline-primary {
+    background-color: rgba($light, 0.1);
+    color: $white;
+}

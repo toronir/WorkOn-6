@@ -1,0 +1,49 @@
+.testimonials {
+    padding-top: 10rem;
+    padding-bottom: 16rem;
+
+    &--heading {
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    &--description {
+        text-align: center;
+        color: $text-muted;
+        margin-bottom: 3rem;
+    }
+
+    &--content {
+        display: flex;
+        height: 100%;
+
+        i {
+            font-size: 3rem;
+            cursor: pointer;
+        }
+    }
+
+    &--item {
+        color: $text-muted;
+        font-size: 2rem;
+        line-height: 6rem;
+    }
+
+    &--opinion {
+        padding: 0 4rem;
+    }
+
+    &--user {
+        display: flex;
+        &__item {
+            background-color: $light;
+            border-radius: 50%;
+            width: 6rem;
+            height: 6rem;
+            text-align: center;
+            line-height: 6rem;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+    }
+}

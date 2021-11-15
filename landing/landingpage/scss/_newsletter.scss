@@ -1,0 +1,26 @@
+.newsletter {
+    padding: 10rem 0;
+    background-color: $light;
+
+    &--info {
+        color: $text-muted;
+    }
+
+    &--sign-in {
+
+        h5 {
+            font-size: 3.5rem;
+            padding-bottom: 2rem;
+        }
+
+        a {
+            text-decoration: none;
+            cursor: pointer;
+            color: $white;
+
+            i{
+                padding: 0 1.5rem;
+            }
+        }
+    }
+}
