@@ -153,7 +153,7 @@ function min(minute) {
 function hor(hourse) {
     hourse > 24 ? hourse = 0 : hourse++;
 } */
-
+/* 
 var makeClock = function() {
     var now = new Date();
 
@@ -187,7 +187,7 @@ window.fetch('https://jsonplaceholder.typicode.com/posts')
 var heading = document.getElementById('h1_hello');
 var elment = document.getElementsByClassName('my_class');
 var elment = document.getElementsByTagName('div');
-var elment = document.querySelector('.my_class');
+var elment = document.querySelector('.my_class'); */
 /*or querySelectorAll */
 
 /* heading.innerHTML = "New string"
@@ -224,7 +224,7 @@ wrapper.replaceChild(div, p3)
 wrapper.removeChild(p);
  */
 
-
+/* 
 
 
 document.getElementById('btn')
@@ -235,14 +235,14 @@ document.getElementById('btn')
 var myFu = (e) => {
     console.log(this);
     console.log(e)
-}
+} */
 
 /* document.getElementById('inp_fuild').addEventListener('click', (e) => {
 
     console.log(this)
     console.log(e)
 }) */
-document.getElementById('inp_fuild').addEventListener('click', myFu);
+/* document.getElementById('inp_fuild').addEventListener('click', myFu);
 
 document.getElementById('l_link').addEventListener('click', (event) => {
     event.preventDefault();
@@ -267,60 +267,151 @@ window.addEventListener('resize', () => {
 })
 
 document.getElementById('result').addEventListener('click', () => {
-        var first = document.getElementById('first_number')
-        var a = first.value
+            var first = document.getElementById('first_number')
+            var a = first.value
 
-        var second = document.getElementById('second_number')
-        var b = second.value
-        var select = document.getElementById('select_op')
-        var res = select.value
-        var result
+            var second = document.getElementById('second_number')
+            var b = second.value
+            var select = document.getElementById('select_op')
+            var res = select.value
+            var result
 
+ */
+/*       if (res == "+") {
+          result = parseInt(a) + parseInt(b);
+          alert(result)
+      } else if (res == "-") {
+          result = parseInt(a) - parseInt(b);
+          alert(result)
+      } else if (res == "*") {
+          result = parseInt(a) * parseInt(b);
+          alert(result)
+      } else if (res == "/") {
+          result = parseInt(a) / parseInt(b);
+          alert(result)
+      } */
+/*             switch (res) {
+                case "+":
+                    result = parseInt(a) + parseInt(b);
+                    alert(result);
+                    break;
+                case "-":
+                    result = parseInt(a) - parseInt(b);
+                    alert(result);
+                    break;
+                case "*":
+                    result = parseInt(a) * parseInt(b);
+                    alert(result);
+                    break;
+                case "/":
+                    result = parseInt(a) / parseInt(b);
+                    alert(result);
+                    break;
+                default:
+                    alert("Some error");
+            }
 
-        if (res == "+") {
-            result = parseInt(a) + parseInt(b);
-            alert(result)
-        } else if (res == "-") {
-            result = parseInt(a) - parseInt(b);
-            alert(result)
-        } else if (res == "*") {
-            result = parseInt(a) * parseInt(b);
-            alert(result)
-        } else if (res == "/") {
-            result = parseInt(a) / parseInt(b);
-            alert(result)
         }
 
 
 
 
-    })
-    /* var i = 20;
-    var new_tr = document.createElement('tr')
-    new_tr.setAttribute("id", "table" + i);
+    ) */
+/* var i = 20;
+var new_tr = document.createElement('tr')
+new_tr.setAttribute("id", "table" + i);
 
-    var NewId = new_tr.id;
-    var new_th = document.createElement('th')
-    new_th.innerHTML = "(window.innerHeight)";
+var NewId = new_tr.id;
+var new_th = document.createElement('th')
+new_th.innerHTML = "(window.innerHeight)";
 
-    table_body.appendChild(new_tr)
+table_body.appendChild(new_tr)
 
-    document.getElementById(NewId).appendChild(new_th)
-    console.log(NewId) */
+document.getElementById(NewId).appendChild(new_th)
+console.log(NewId) */
+var i = 0;
 
-/* window.fetch('https://jsonplaceholder.typicode.com/posts')
-    .then((response) => response.json())
-    .then((json) => console.log(json)); */
-for (i = 0; i <= 3; i++) {
-    var new_tr = document.createElement('tr')
-    new_tr.setAttribute("id", "table" + i);
+document.getElementById('get_users_btn').addEventListener('click', () => {
 
-    var NewId = new_tr.id;
-    var new_th = document.createElement('th')
-    new_th.innerHTML = "(window.innerHeight)";
 
-    table_body.appendChild(new_tr)
+    window.fetch('https://jsonplaceholder.typicode.com/posts')
+        .then((response) => response.json())
+        .then((json) => {
 
-    document.getElementById(NewId).appendChild(new_th)
-    console.log(NewId)
+            if (i + 10 > json.lenght) {
+                alert("No more elem!")
+            } else {
+                var loader = document.createElement('div');
+                loader.setAttribute("class", "loader");
+                table_body.appendChild(loader);
+
+                json.slice(i, i + 10).forEach(element => {
+
+                        console.log(element)
+                        var new_tr = document.createElement('tr')
+                        new_tr.setAttribute("id", "table" + i);
+
+                        var NewId = new_tr.id;
+                        var new_th = document.createElement('th')
+                        new_th.innerHTML = element.id;
+                        var new_th1 = document.createElement('th')
+                        new_th1.innerHTML = element.title;
+                        var new_th2 = document.createElement('th')
+                        new_th2.innerHTML = element.body;
+
+                        table_body.appendChild(new_tr)
+
+
+                        document.getElementById(NewId).appendChild(new_th)
+                        document.getElementById(NewId).appendChild(new_th1)
+                        document.getElementById(NewId).appendChild(new_th2)
+                        console.log(NewId)
+                        i++;
+                    }
+
+                )
+            }
+
+        })
+})
+
+
+window.addEventListener('load', function() {
+    document.querySelector('body').classList.add("loaded")
+});
+
+
+
+function Persone(name, age) {
+    if (typeof name === 'undefined' || typeof age === 'undefinder') return;
+    this.name = name
+    this.age = age
+    this.setAge = (newAge) => {
+        this.age = newAge
+    }
 }
+
+var p1 = new Persone("Jan", 20);
+Persone.prototype.gender = "M";
+Persone.prototype.seyHello = () => {
+    return "Hello , my name is" + this.name
+}
+
+var p2 = new Persone("Adam", 20)
+
+Array.prototype.myNewFn = () => {
+
+}
+
+console.log([].myNewFn);
+
+
+Persone.prototype.seyHello = () => {
+    return "Hi!My name is" + this.name;
+}
+
+var p1 = new Persone('Jan', 30)
+var p1 = new Persone('Karl', 20)
+
+
+p1.sayHello.call(p2)

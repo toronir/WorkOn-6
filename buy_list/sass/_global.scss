@@ -1,0 +1,16 @@
+#list-container {
+    li {
+        span {
+            cursor: pointer;
+            &hover {
+                text-decoration: line-through;
+            }
+        }
+        a {
+            display: block;
+        }
+        &.done span {
+            text-decoration: line-through;
+        }
+    }
+}

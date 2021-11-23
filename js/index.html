@@ -10,58 +10,64 @@
 </head>
 
 <body>
-    <h1 id="h1_hello">Hello</h1>
-
-    <div id='clock'>
-
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
     </div>
-    <div id="wrapper">
-        <p></p>
-    </div>
-    <div class="my_class"></div>
-    <div class="my_class"></div>
-    <div class="my_class"></div>
-    <div class="my_class"></div>
-    <button id="btn">Press on Me</button>
-    <div id='size'>
+    <div class="container">
+        <!--  <h1 id="h1_hello">Hello</h1>
 
-    </div>
+        <div id='clock'>
 
-    <input type="text" value="Text" name="" id="inp_text">
-    <input type="text" value="Text" name="" id="inp_fuild">
-    <a href="" id="l_link">HIHIHI</a>
-    <div>Calculator</div>
+        </div>
+        <div id="wrapper">
+            <p></p>
+        </div>
+        <div class="my_class"></div>
+        <div class="my_class"></div>
+        <div class="my_class"></div>
+        <div class="my_class"></div>
+        <button id="btn">Press on Me</button>
+        <div id='size'>
 
-    <div>
-        <input type="text" id='first_number'>
-        <select name="" id="select_op">
+        </div>
+
+        <input type="text" value="Text" name="" id="inp_text">
+        <input type="text" value="Text" name="" id="inp_fuild">
+        <a href="" id="l_link">HIHIHI</a>
+        <div>Calculator</div>
+
+        <div>
+            <input type="text" id='first_number'>
+            <select name="" id="select_op">
             <option value="+">+</option>
             <option value="-">-</option>
             <option value="*">*</option>
             <option value="/">/</option>
         </select>
-        <input type="text" id='second_number'>
-        <button id='result'>Result</button>
+            <input type="text" id='second_number'>
+            <button id='result'>Result</button>
+        </div>
+ -->
+
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Content</th>
+                </tr>
+            </thead>
+            <tbody id='table_body'>
+
+            </tbody>
+        </table>
     </div>
 
 
-
-    <table class="table">
-        <thead>
-            <tr>
-                <th scope="col">#</th>
-                <th scope="col">Title</th>
-                <th scope="col">Content</th>
-            </tr>
-        </thead>
-        <tbody id='table_body'>
-            <tr id='999'>
-                <th scope="row">Ex</th>
-                <td colspan="2">Larry the Bird</td>
-                <td>@twitter</td>
-            </tr>
-        </tbody>
-    </table>
+    <button id='get_users_btn'>Add users</button>
     <script src="./scr.js"></script>
 </body>
 
