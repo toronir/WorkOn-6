@@ -1,0 +1,49 @@
+.form {
+    max-width: 100%;
+    margin: 2rem auto;
+    padding: 2rem;
+    border: 1px solid #ccc;
+    background-color: #eee;
+}
+
+.form input {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+    border: 1px solid #aaa;
+    padding: .5rem 1rem;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.changed-r input {
+    border: 1px solid red;
+}
+
+.changed-g input {
+    border: 1px solid green;
+}
+
+.changed-b input {
+    border: 1px solid blue;
+}
+
+.form button {
+    display: block;
+    width: 100%;
+    padding: .5rem 1rem;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.form button:hover {
+    background-color: darkblue;
+}
+
+@media (min-width: 800px) {
+    .form {
+        width: 500px;
+    }
+}
